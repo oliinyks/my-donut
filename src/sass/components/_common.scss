@@ -1,3 +1,36 @@
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 body{
-	
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 18px;
+line-height: 1.22em;
+}
+
+.title{ 
+font-family: 'Caveat Brush';
+font-size: 24px;
+line-height: 1.25em;
+text-align: center;
+
+	@include for-desktop-up{
+	font-size: 36px;
+	line-height: 1.8em;
+	}
+
 }
