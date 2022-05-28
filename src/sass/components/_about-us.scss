@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+}
+
+.about__title {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  /* identical to box height, or 181% */
+  text-align: center;
+
+  color: #0deb05;
+}
+
+.about__p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2E2520;
+}
