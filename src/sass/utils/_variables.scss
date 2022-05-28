@@ -1,5 +1,28 @@
 $colors: (
 // приклад: 'primary-text':rgba(117, 117, 117, 1),
+'primary-background': #E5E5E5, 
+'secondary-background': #FEF3E4, 
+'menu-background':  rgba(254,243,228,0.9), 
+
+'registration-form-background':   #FFFFF9,
+'registration-form-shadow': rgba(171, 129, 108, 0.15),
+
+'donut-element-shadow': rgba(171,129,108,0.25),
+'donut-icon':#674D40,
+  
+'button-primary': #AB816C, 
+'icons-primary': #2E2520,
+'map-icon': #000000,
+'rating-icon': #AB816C, 
+'form-border': rgba(171,129,108,0.5),
+'counter':#AB816C,
+
+'text-primary':#2E2520, 
+'button-text': #FFFFFF,  
+'menu-text-secondary': #876655,
+'text-link': #AB816C, 
+'donut-text': #000000, 
+'form-text':rgba(171, 129, 108, 0.5), 
 );
 
 //приклад вставтляння кольору:: color: getColor('primary-text');
