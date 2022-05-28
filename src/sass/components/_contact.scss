@@ -1,0 +1,45 @@
+.container-contact {
+    padding-top: 32px;
+    text-align: center;
+}
+
+.conact-secondary-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+    margin-top: 16px;
+}
+
+.contact-form {
+padding-top: 16px;
+}
+
+.contact-form-block {
+
+    &__label {
+        display: none;
+    }
+
+    &__input {  
+        border: none;
+        width: 280px;
+        height: 20px;
+        border-bottom: 1px solid #AB816C;
+    }
+
+    &__input::placeholder {
+        font-size: 16px;
+        line-height: 1.25em;
+        border-bottom: 2px;
+
+        color: rgba(171, 129, 108, 0.5);
+    }
+}
+
+.contact-form-block + .contact-form-block {
+    margin-top: 20px;
+}
+
+.contact-btn {
+    margin-top: 32px;
+}
