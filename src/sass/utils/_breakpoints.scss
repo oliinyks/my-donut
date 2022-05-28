@@ -1,0 +1,30 @@
+@mixin for-phone-up {
+   @media (min-width: 320px) {
+      @content;
+   }
+}
+@mixin for-phone-only {
+   @media (max-width: 769px) {
+      @content;
+   }
+}
+
+@mixin for-tablet-up {
+   @media (min-width: 770px) {
+      @content;
+   }
+}
+
+@mixin for-tablet-only {
+   @media (min-width: 770px) and (max-width: 1299px) {
+      @content;
+    }
+}
+
+@mixin for-desktop-up {
+   @media (min-width: 1300px) {
+      @content;
+   }
+}
+
+//приклад: @include for-tablet-up{}

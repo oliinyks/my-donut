@@ -1,0 +1,13 @@
+$colors: (
+// приклад: 'primary-text':rgba(117, 117, 117, 1),
+);
+
+//приклад вставтляння кольору:: color: getColor('primary-text');
+
+@function getColor($key) {
+	@return map-get($colors, $key);
+}
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// приклад: transition: transform 250ms $timing-function;
