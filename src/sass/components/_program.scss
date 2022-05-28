@@ -1,0 +1,26 @@
+.dignity {
+  @include for-tablet-up {
+    display: flex;
+  }
+}
+
+.event {
+  display: flex;
+}
+
+.event-plan__item {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background: #fef3e4;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+}
+.event-plan__donut {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+}
+.event-plan__icon {
+  height: 20px;
+}
