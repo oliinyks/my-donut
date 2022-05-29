@@ -12,45 +12,80 @@
                 <li class="feature__item">&#62; Photoshoot by professional photographer</li>
                 <li class="feature__item">&#62; Secret receipt of cooking from Eva</li>
                 <li class="feature__item">&#62; All products are included in the price</li>
-                <li class="feature__item">Come with your dear people and friends
+                <li class="feature__item feature__item-conclusions">
+                    Come with your dear people and friends
                     and you will spend an unforgettable time and
                     will become a real professional
                     in donuts cooking!</li>
+                <li class="feature__item" id="more" id="dots">
+                    Come with your dear people and friends
+                    and you will spend an unforgettable time and
+                    will become a real professional
+                    in donuts cooking!</li>
+                <span id="dots"></span>
             </ul>
+            <button type="button" class="button__read-more" onclick="myFunction()" id="myBtn">Read
+                more</button>
         </div>
         <article class="event">
             <div class=" event-plan-left">
                 <ul class="event-plan__list-left">
                     <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-donut"></svg></use>
+                        <use><svg class="event-plan__icon-primary"></svg></use>
                         <p class="event-plan__title">Type of the event</p>
                         <p class="event-plan__text">Cooking classes</p>
-                        <use><svg class="event-plan__icon"></svg></use>
+                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
                     </li>
                     <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-donut"></svg></use>
+                        <use><svg class="event-plan__icon-primary"></svg></use>
                         <p class="event-plan__title">Time of the event</p>
                         <p class="event-plan__text">18:30 (2.5 hours)</p>
-                        <use><svg class="event-plan__icon"></svg></use>
+                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
                     </li>
                 </ul>
             </div>
             <div class=" event-plan-right">
                 <ul class="event-plan__list-right">
                     <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-donut"></svg></use>
+                        <use><svg class="event-plan__icon-primary"></svg></use>
                         <p class="event-plan__title">Number of guests</p>
                         <p class="event-plan__text">1 to 20</p>
-                        <use><svg class="event-plan__icon"></svg></use>
+                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
                     </li>
                     <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-donut"></svg></use>
+                        <use><svg class="event-plan__icon-primary"></svg></use>
                         <p class="event-plan__title">The host speaks</p>
                         <p class="event-plan__text">English, French</p>
-                        <use><svg class="event-plan__icon"></svg></use>
+                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
                     </li>
                 </ul>
             </div>
         </article>
     </div>
+    <!-- <script>// <![CDATA[
+        function ShowHide(divId) {
+            if (document.getElementById(divId).style.display == 'none') {
+                document.getElementById(divId).style.display = 'block';
+            }
+            else {
+                document.getElementById(divId).style.display = 'none';
+            }
+        }
+    // ]]></script> -->
+    <script>    function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Less";
+                moreText.style.display = "inline";
+            }
+        }</script>
+
 </section>
