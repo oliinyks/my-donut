@@ -1,26 +1,131 @@
 .dignity {
   @include for-tablet-up {
     display: flex;
+    justify-content: space-around;
+    @include for-desktop-up {
+    }
+  }
+}
+.feature {
+  @include for-phone-up {
+    width: 280px;
+  }
+  @include for-tablet-up {
+    width: 336px;
+  }
+  @include for-desktop-up {
+    width: 392px;
+  }
+}
+// Заголовок
+.feature__title {
+  font-family: var(--secodary-font-family);
+  font-style: normal;
+  font-size: 36px;
+  line-height: 65px;
+  color: getColor('text-primary');
+  text-align: center;
+  @include for-tablet-up {
+    text-align: left;
+  }
+}
+//
+.feature__text {
+  margin-bottom: 8px;
+  @include for-desktop-up {
+    margin-bottom: 20px;
+  }
+}
+// Описание
+.feature__item {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: getColor('text-primary');
+  margin-bottom: 8px;
+  @include for-desktop-up {
+    margin-bottom: 16px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+// Пончики
+.event {
+  display: flex;
+  justify-content: space-between;
+  @include for-tablet-up {
+    width: 50%;
   }
 }
 
-.event {
+.event-plan__list-left {
   display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: flex-end;
 }
-
+.event-plan__list-right {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: space-around;
+  justify-content: flex-end;
+}
 .event-plan__item {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
   position: relative;
   width: 130px;
   height: 130px;
+  text-align: center;
+  border-radius: 50%;
   background: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  @include for-tablet-up {
+    width: 152px;
+    height: 152px;
+  }
+  @include for-desktop-up {
+    width: 180px;
+    height: 180px;
+  }
 }
-.event-plan__donut {
+// 'Заголок' характеристики мероприятия
+.event-plan__title {
+  font-family: var(--secodary-font-family);
+  font-size: 18px;
+  line-height: 23px;
+  color: getColor('donut-text');
+  @include for-desktop-up {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.event-plan__text {
+  font-size: 14px;
+  line-height: 17px;
+  color: getColor('donut-text');
+  width: 100%;
+  @include for-desktop-up {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+// Иконки пончиков
+.event-plan__icon-donut {
   position: absolute;
   top: 0;
   left: 0;
   height: 80px;
+  width: 80px;
 }
+// // Иконки под описанием
 .event-plan__icon {
   height: 20px;
+  width: 20px;
 }
