@@ -103,8 +103,13 @@
 }
 
 .about__p:not(:last-child) {
+<<<<<<< Updated upstream
   padding-bottom: 22px;
   padding-right: 5px;
+=======
+    padding-bottom: 22px;
+    padding-right: 5px;
+>>>>>>> Stashed changes
 }
 
 .style-btn {
@@ -116,6 +121,7 @@
     background: none;
   }
 
+<<<<<<< Updated upstream
   @include for-tablet-up {}
 
   @include for-desktop-up {
@@ -152,3 +158,12 @@
   }
 
 }
+=======
+  @include for-tablet-up {
+
+  }
+  @include for-desktop-up {
+    display: none;
+}
+}
+>>>>>>> Stashed changes
