@@ -1,28 +1,33 @@
 .about-us {
-  @include for-phone-up {
+  @include for-phone-only {
+    display: block;
+  }
+
+  @include for-tablet-up {
     display: flex;
     justify-content: flex-end;
   }
 
-  @include for-tablet-up {}
-
-  @include for-desktop-up {}
+  @include for-desktop-up {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .about-us__position {
   @include for-phone-up {
     width: 279px;
-    margin: 16px 21px 16px 20px;
+    padding-bottom: 16px;
   }
 
   @include for-tablet-up {
     width: 336px;
-    margin: 25px 32px 40px 32px;
+    padding-bottom: 51px;
   }
 
   @include for-desktop-up {
     width: 392px;
-    margin: 0 125px 22px 139px;
+    padding-bottom: 66px;
   }
 }
 
@@ -50,6 +55,7 @@
     font-size: 36px;
     line-height: 1.8;
     padding-bottom: 10px;
+    padding-top: 43px;
   }
 }
 
@@ -99,4 +105,50 @@
 .about__p:not(:last-child) {
   padding-bottom: 22px;
   padding-right: 5px;
+}
+
+.style-btn {
+  @include for-phone-up {
+    width: 67px;
+    height: 23px;
+    padding: 0;
+    color: #AB816C;
+    background: none;
+  }
+
+  @include for-tablet-up {}
+
+  @include for-desktop-up {
+    display: none;
+  }
+}
+
+.about-us__img {
+  position:inherit;
+  display: flex;
+}
+
+.cupcake {
+  @media (max-width: 769px) {
+    padding-bottom: 16px;
+  }
+  @media (min-width: 770px) and (max-width: 1299px) {
+    padding-right: 31px;
+    
+  }
+  @include for-desktop-up {
+    padding-right: 139px;
+}
+}
+
+.spoon {
+  @media (max-width: 1299px) {
+    display: none;
+  }
+  @include for-desktop-up {
+    position:absolute;
+    left: -103px;
+    top: 220px;
+  }
+
 }
