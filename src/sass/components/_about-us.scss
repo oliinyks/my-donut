@@ -106,9 +106,12 @@
 <<<<<<< Updated upstream
   padding-bottom: 22px;
   padding-right: 5px;
+<<<<<<< Updated upstream
 =======
     padding-bottom: 22px;
     padding-right: 5px;
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
@@ -122,6 +125,9 @@
   }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
   @include for-tablet-up {}
 
   @include for-desktop-up {
@@ -130,7 +136,11 @@
 }
 
 .about-us__img {
+<<<<<<< Updated upstream
   position:inherit;
+=======
+  position: inherit;
+>>>>>>> Stashed changes
   display: flex;
 }
 
@@ -138,6 +148,7 @@
   @media (max-width: 769px) {
     padding-bottom: 16px;
   }
+<<<<<<< Updated upstream
   @media (min-width: 770px) and (max-width: 1299px) {
     padding-right: 31px;
     
@@ -145,18 +156,36 @@
   @include for-desktop-up {
     padding-right: 139px;
 }
+=======
+
+  @media (min-width: 770px) and (max-width: 1299px) {
+    padding-right: 31px;
+
+  }
+
+  @include for-desktop-up {
+    padding-right: 139px;
+  }
+>>>>>>> Stashed changes
 }
 
 .spoon {
   @media (max-width: 1299px) {
     display: none;
   }
+<<<<<<< Updated upstream
   @include for-desktop-up {
     position:absolute;
+=======
+
+  @include for-desktop-up {
+    position: absolute;
+>>>>>>> Stashed changes
     left: -103px;
     top: 220px;
   }
 
+<<<<<<< Updated upstream
 }
 =======
   @include for-tablet-up {
@@ -165,5 +194,8 @@
   @include for-desktop-up {
     display: none;
 }
+}
+>>>>>>> Stashed changes
+=======
 }
 >>>>>>> Stashed changes
