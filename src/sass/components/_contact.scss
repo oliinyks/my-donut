@@ -3,15 +3,21 @@
     text-align: center;
 }
 
-.conact-secondary-title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25em;
-    margin-top: 16px;
+.contact-title {
+    margin-bottom: 16px;
+    @include for-tablet-up {
+        margin-bottom: 20px;
+    }
 }
 
-.contact-form {
-padding-top: 16px;
+.conact-secondary-title {
+
+    margin-bottom: 16px;
+    font-size: 16px;
+
+    @include for-desktop-up {
+        font-size: 18px;
+    }
 }
 
 .contact-form-block {
@@ -24,22 +30,42 @@ padding-top: 16px;
         border: none;
         width: 280px;
         height: 20px;
-        border-bottom: 1px solid #AB816C;
-    }
+        border-bottom: 1px solid getColor('accent');
+        outline: none;
+
+        @include for-tablet-only {
+            width: 336px;
+        }
+        @include for-desktop-up {
+            width: 394px;
+        }
+    }   
 
     &__input::placeholder {
         font-size: 16px;
         line-height: 1.25em;
-        border-bottom: 2px;
+        color: getColor('form-text');
+    }
+}
 
-        color: rgba(171, 129, 108, 0.5);
+.contact-form-block:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include for-tablet-only {
+        margin-bottom: 16px;
+    }
+    @include for-desktop-up {
+        margin-bottom: 15px;
     }
 }
 
 .contact-form-block + .contact-form-block {
-    margin-top: 20px;
+    margin-bottom: 32px;
 }
 
-.contact-btn {
-    margin-top: 32px;
+.btn {
+    @include for-desktop-up {
+        width: 182px;
+        height: 45px;
+    }
 }
