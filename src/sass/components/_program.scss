@@ -21,13 +21,18 @@
 .feature__title {
   font-family: var(--secodary-font-family);
   font-style: normal;
-  font-size: 36px;
-  line-height: 65px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 400;
   color: getColor('text-primary');
   text-align: center;
   margin-bottom: 8px;
   @include for-tablet-up {
     text-align: left;
+  }
+  @include for-desktop-up {
+    font-size: 2.25rem;
+    line-height: 4.0625rem;
   }
 }
 .feature__list {
@@ -36,35 +41,43 @@
     margin-bottom: 0;
   }
 }
-//
 .feature__text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
   margin-bottom: 8px;
+
   @include for-desktop-up {
     margin-bottom: 20px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 // Описание
 .feature__item {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
   color: getColor('text-primary');
   margin-bottom: 8px;
   @include for-desktop-up {
     margin-bottom: 16px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
   &:last-child {
     margin-bottom: 0;
   }
 }
-
 // Кнопка Read more и текст
 .button__read-more {
   font-family: var(--secodary-font-family);
-  font-size: 18px;
-  line-height: 23px;
-  padding: 20px 10px 20px 5px;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  padding: 0 10px 20px 5px;
+  font-weight: 400;
   color: getColor('accent');
   border: none;
   background: none;
@@ -96,10 +109,16 @@
     transform: translateY(-5px);
   }
 }
-.feature__item-conclusions {
+.feature__item-primary {
   display: none;
+
   @include for-desktop-up {
     display: block;
+  }
+}
+.feature__item-secondary {
+  @include for-desktop-up {
+    display: none;
   }
 }
 // Пончики
@@ -128,7 +147,12 @@
   align-items: flex-end;
 }
 .event-plan-left {
-  margin-right: 15px;
+  @include for-tablet-up {
+    margin-right: 15px;
+  }
+  @include for-desktop-up {
+    margin-right: 15px;
+  }
 }
 .event-plan__item-douwn {
   margin-bottom: 59px;
@@ -150,8 +174,10 @@
   height: 130px;
   text-align: center;
   border-radius: 50%;
+  color: getColor('donut-icon');
   background: #fef3e4;
-  box-shadow: 2px 4px 5px getColor('donut-element-shadow'), -2px 4px 5px getColor('donut-element-shadow');
+  box-shadow: 2px 4px 5px getColor('donut-element-shadow'),
+    -2px 4px 5px getColor('donut-element-shadow');
   transition: all 0.2s ease;
   &:hover,
   &:focus {
@@ -168,26 +194,25 @@
     height: 180px;
   }
 }
-
 // 'Заголок' характеристики мероприятия
 .event-plan__title {
   font-family: var(--secodary-font-family);
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
   color: getColor('donut-text');
   margin-bottom: 4px;
   @include for-tablet-up {
     margin-bottom: 14px;
   }
   @include for-desktop-up {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     margin-bottom: 16px;
   }
 }
 .event-plan__text {
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
   color: getColor('donut-text');
   width: 100%;
   margin-bottom: 9px;
@@ -195,8 +220,8 @@
     margin-bottom: 10px;
   }
   @include for-desktop-up {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-bottom: 8px;
   }
 }
@@ -221,8 +246,8 @@
   }
 }
 // // Иконки под описанием
-
 .event-plan__icon-secondary {
+  fill: currentColor;
   height: 20px;
   width: 21px;
   margin-bottom: 10px;
