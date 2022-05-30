@@ -107,9 +107,12 @@
   padding-bottom: 22px;
   padding-right: 5px;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     padding-bottom: 22px;
     padding-right: 5px;
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -126,6 +129,9 @@
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   @include for-tablet-up {}
@@ -137,7 +143,11 @@
 
 .about-us__img {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   position:inherit;
+=======
+  position: inherit;
+>>>>>>> Stashed changes
 =======
   position: inherit;
 >>>>>>> Stashed changes
@@ -149,6 +159,7 @@
     padding-bottom: 16px;
   }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   @media (min-width: 770px) and (max-width: 1299px) {
     padding-right: 31px;
     
@@ -157,6 +168,8 @@
     padding-right: 139px;
 }
 =======
+=======
+>>>>>>> Stashed changes
 
   @media (min-width: 770px) and (max-width: 1299px) {
     padding-right: 31px;
@@ -166,6 +179,9 @@
   @include for-desktop-up {
     padding-right: 139px;
   }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
@@ -173,6 +189,7 @@
   @media (max-width: 1299px) {
     display: none;
   }
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   @include for-desktop-up {
     position:absolute;
@@ -197,5 +214,14 @@
 }
 >>>>>>> Stashed changes
 =======
+}
+>>>>>>> Stashed changes
+=======
+
+  @include for-desktop-up {
+    position: absolute;
+    left: -103px;
+    top: 220px;
+  }
 }
 >>>>>>> Stashed changes
