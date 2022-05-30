@@ -632,8 +632,8 @@ body {
 .feature__title {
   font-family: var(--secodary-font-family);
   font-style: normal;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
   font-weight: 400;
   color: #2e2520;
   text-align: center;
@@ -648,8 +648,8 @@ body {
 
 @media (min-width: 1300px) {
   .feature__title {
-    font-size: 36px;
-    line-height: 65px;
+    font-size: 2.25rem;
+    line-height: 4.0625rem;
   }
 }
 
@@ -665,24 +665,24 @@ body {
 
 .feature__text {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   margin-bottom: 8px;
 }
 
 @media (min-width: 1300px) {
   .feature__text {
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
 .feature__item {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   font-weight: 400;
   color: #2e2520;
   margin-bottom: 8px;
@@ -691,8 +691,8 @@ body {
 @media (min-width: 1300px) {
   .feature__item {
     margin-bottom: 16px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -702,9 +702,9 @@ body {
 
 .button__read-more {
   font-family: var(--secodary-font-family);
-  font-size: 18px;
-  line-height: 23px;
-  padding: 20px 10px 20px 5px;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  padding: 0 10px 20px 5px;
   font-weight: 400;
   color: #ab816c;
   border: none;
@@ -768,13 +768,19 @@ body {
   }
 }
 
-.feature__item-conclusions {
+.feature__item-primary {
   display: none;
 }
 
 @media (min-width: 1300px) {
-  .feature__item-conclusions {
+  .feature__item-primary {
     display: block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .feature__item-secondary {
+    display: none;
   }
 }
 
@@ -897,8 +903,8 @@ body {
 
 .event-plan__title {
   font-family: var(--secodary-font-family);
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
   color: #000000;
   margin-bottom: 4px;
 }
@@ -911,15 +917,15 @@ body {
 
 @media (min-width: 1300px) {
   .event-plan__title {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     margin-bottom: 16px;
   }
 }
 
 .event-plan__text {
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
   color: #000000;
   width: 100%;
   margin-bottom: 9px;
@@ -933,8 +939,8 @@ body {
 
 @media (min-width: 1300px) {
   .event-plan__text {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-bottom: 8px;
   }
 }
