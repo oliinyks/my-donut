@@ -151,13 +151,13 @@
   text-align: center;
   border-radius: 50%;
   background: #fef3e4;
-  box-shadow: 2px 4px 5px hsla(0, 0, 0, 0.1), -2px 4px 5px hsla(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 5px getColor('donut-element-shadow'), -2px 4px 5px getColor('donut-element-shadow');
   transition: all 0.2s ease;
   &:hover,
   &:focus {
     transform: translateY(-3px);
-    box-shadow: 2px 9px 50px hsla(0, 0, 0, 0.1),
-      -2px 6px 20px hsla(0, 0, 0, 0.1);
+    box-shadow: 2px 9px 50px getColor('donut-element-shadow'),
+      -2px 6px 20px getColor('donut-element-shadow');
   }
   @include for-tablet-up {
     width: 152px;
