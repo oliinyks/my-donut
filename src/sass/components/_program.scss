@@ -8,13 +8,13 @@
 }
 .feature {
   @include for-phone-up {
-    width: 280px;
+    width: 290px;
   }
   @include for-tablet-up {
-    width: 336px;
+    width: 365px;
   }
   @include for-desktop-up {
-    width: 392px;
+    width: 400px;
   }
 }
 // Заголовок
@@ -102,23 +102,33 @@
     display: block;
   }
 }
-
 // Пончики
 .event {
   display: flex;
+  justify-content: space-around;
+  height: 358px;
+  width: 320px;
   @include for-phone-only {
     margin-top: 35px;
   }
   @include for-tablet-only {
+    justify-content: flex-end;
     margin-top: 45px;
+    width: 350px;
+    height: 430px;
   }
   @include for-desktop-up {
+    width: 550px;
     margin-top: 45px;
+    height: 550px;
   }
 }
 .event-plan-right {
   display: flex;
   align-items: flex-end;
+}
+.event-plan-left {
+  margin-right: 15px;
 }
 .event-plan__item-douwn {
   margin-bottom: 59px;
@@ -141,7 +151,6 @@
   text-align: center;
   border-radius: 50%;
   background: #fef3e4;
-  // box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
   box-shadow: 2px 4px 5px hsla(0, 0, 0, 0.1), -2px 4px 5px hsla(0, 0, 0, 0.1);
   transition: all 0.2s ease;
   &:hover,
