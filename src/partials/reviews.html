@@ -1,3 +1,168 @@
 <section>
-
+  <section class="container container-swiper">
+    <h2 class="feature__title">Reviews</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews-card">
+            slide 1
+            <picture>
+              <source
+                srcset="
+                  ../images/reviews/pc/john-desctop.png    1x,
+                  ../images/reviews/pc/john-desctop@2x.png 2x
+                "
+                media="(min-width:1300px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ../images/reviews/tablet/john-tablet.png    1x,
+                  ../images/reviews/tablet/john-tablet@2x.png 2x
+                "
+                media="(min-width:770px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ../images/reviews/mobile/john-mobile.png    1x,
+                  ../images/reviews/mobile/john-mobile@2x.png 2x
+                "
+                media="(max-width:769px)"
+                type="image/png"
+              />
+              <img
+                src="../images/reviews/pc/john-desctop.png"
+                alt="customer John review"
+                class="review-card__img"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">
+            slide 2
+            <picture>
+              <source
+                srcset="
+                  ../images/reviews/pc/will-desctop.png    1x,
+                  ../images/reviews/pc/will-desctop@2x.png 2x
+                "
+                media="(min-width:1300px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ../images/reviews/tablet/will-tablet.png    1x,
+                  ../images/reviews/tablet/will-tablet@2x.png 2x
+                "
+                media="(min-width:770px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ../images/reviews/mobile/will-mobile.png    1x,
+                  ../images/reviews/mobile/will-mobile@2x.png 2x
+                "
+                media="(max-width:769px)"
+                type="image/png"
+              />
+              <img
+                src="../images/reviews/pc/elisa-desctop.png"
+                alt="customer Will review"
+                class="review-card__img"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">
+            slide 3
+            <picture>
+              <source
+                srcset="
+                  ../images/reviews/pc/elisa-desctop.png    1x,
+                  ../images/reviews/pc/elisa-desctop@2x.png 2x
+                "
+                media="(min-width:1300px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ../images/reviews/tablet/elisa-tablet.png    1x,
+                  ../images/reviews/tablet/elisa-tablet@2x.png 2x
+                "
+                media="(min-width:770px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ../images/reviews/mobile/elisa-mobile.png    1x,
+                  ../images/reviews/mobile/elisa-mobile@2x.png 2x
+                "
+                media="(max-width:769px)"
+                type="image/png"
+              />
+              <img
+                src="../images/reviews/pc/elisa-desctop.png"
+                alt="customer Elisa review"
+                class="review-card__img"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 4<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 5<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 6<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 7<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 8<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 9<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 10<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 11<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 12<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 13<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 14<img src="" alt="" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-card">slide 15<img src="" alt="" /></div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </section>
 </section>
