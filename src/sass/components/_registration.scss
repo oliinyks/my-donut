@@ -1,0 +1,269 @@
+.registration {
+
+    @include for-phone-only {
+    position: relative;
+    padding-top: 32px;
+    }
+
+    @include for-tablet-only {
+    padding-top: 40px;
+    }
+
+    @include for-desktop-up {
+    padding-top: 60px;
+        }
+}
+
+
+.registration__container {
+margin-left: auto;
+margin-right: auto;
+
+    @include for-phone-only {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        max-width: 320px;
+        }
+    
+    @include for-tablet-only {
+        padding-left: 32.5px;
+        padding-right: 32.5px;
+        max-width: 769px;
+        }
+    
+
+    @include for-desktop-up {
+        padding-left: 232px;
+        padding-right: 232px;
+        max-width: 1286px;
+        }
+}
+
+
+.registration__heading {
+    color: getColor('text-primary');
+
+    @include for-phone-only {
+        position: absolute;
+        top: 64px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include for-tablet-only {
+        line-height: 2.7em;
+    }
+
+    @include for-desktop-up {
+        line-height: 1.8em;
+    }
+}
+
+
+.register__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    background-color: getColor('registration-form-background');
+    box-shadow: -4px -4px 4px getColor('registration-form-shadow'),
+        4px 4px 4px getColor('registration-form-shadow');
+
+    @include for-phone-only {
+        padding: 82px 8px 32px 8px;
+        border-radius: 150px 150px 0px 0px;
+        min-height: 466px;
+    }
+
+
+    @include for-tablet-only {
+        margin-top: 8px;
+        padding: 40px 60px 66px 62px;   
+        }
+
+    @include for-tablet-up {
+        border-radius: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: 260px;
+    }
+
+    @include for-desktop-up {
+        margin: 16px 0px 0px 0px;
+        padding: 35px 105px 35px 107px;
+        min-width: 822px;
+        
+    }
+}
+
+
+
+.register__info {
+    font-weight: 500;
+    color: getColor('text-primary');
+
+    @include for-phone-only {
+        margin-top: 20px;
+        max-width: 114px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+    
+    @include for-tablet-only {
+        max-width: 90px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    @include for-tablet-up {
+        text-align: right;
+    }
+
+   @include for-desktop-up {
+       min-width: 127px;
+       margin-top: 20px;
+       margin-right: 32px;
+       font-size: 20px;
+    }
+}
+
+
+
+.register__info-price {
+    display: block;
+
+    @include for-phone-only {
+        margin-top: 20px;
+    }
+
+    @include for-tablet-up {
+        margin-top: 32px;
+    }
+}
+
+
+.register {
+
+    @include for-phone-only {
+        margin-top: 20px;
+        padding-top: 8px;
+        border-top: 1px solid getColor('form-text');
+    }
+
+    
+    @include for-tablet-up {
+        display: flex;
+        flex-direction: row;
+        padding-left: 24px;
+    }
+
+   @include for-desktop-up { 
+       margin-top: 21px;
+       border-left: 1px solid getColor('form-text');
+       padding-left: 32px;
+   }
+
+}
+
+.register__head {
+    font-size: 16px;
+    line-height: 1.25em;
+    color: getColor('text-primary');
+
+    @include for-phone-only {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    @include for-tablet-up {
+        text-align: left;
+    }
+
+    @include for-desktop-up {
+        margin-bottom: 13px;
+        font-size: 18px;
+        line-height: 1.22em;
+    }
+}
+
+
+
+.register__input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 20px;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid getColor('accent');
+
+    @include for-phone-only {
+        max-width: 400px;
+    }
+
+    @include for-tablet-only {
+        min-width: 237px;
+        margin-top: 16px;
+    }
+
+    @include for-desktop-up {
+        min-width: 238px;
+        height: 22px;
+     }
+
+
+    &::placeholder {
+        color: getColor('form-text');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25em;
+    }
+}
+
+
+@include for-phone-only {
+    .register__input+.register__input {
+        margin-top: 20px;
+    }
+}
+
+@include for-desktop-up {
+    .register__input+.register__input {
+            margin-top: 15px;
+        }
+}
+
+
+
+.register__button {
+    display: block;
+
+
+    @include for-phone-only {
+        max-width: 400px;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    @include for-tablet-only {
+        margin-top: 70px;
+        margin-left: 54px;
+        padding: 8px 47px 9px 46px;
+    }
+
+    @include for-desktop-up {
+        margin-top: 56px;
+        margin-left: 23px;
+        padding: 7px 45px 8px 44px;
+        font-size: 24px;
+        line-height: 1.25px;
+    }
+}
