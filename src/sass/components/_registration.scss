@@ -1,44 +1,59 @@
 .registration {
 
     @include for-phone-only {
-    position: relative;
-    padding-top: 32px;
+        position: relative;
+        padding-top: 32px;
     }
 
     @include for-tablet-only {
-    padding-top: 40px;
+        padding-top: 40px;
+        padding-bottom: 46px;
     }
 
     @include for-desktop-up {
-    padding-top: 60px;
-        }
+        padding-top: 60px;
+        padding-bottom: 128px;
+    }
 }
 
 
-.registration__container {
-margin-left: auto;
-margin-right: auto;
 
-    @include for-phone-only {
-        padding-left: 20px;
-        padding-right: 20px;
 
-        max-width: 320px;
-        }
-    
+// ------------------------background image
+
+
+.registration {
     @include for-tablet-only {
-        padding-left: 32.5px;
-        padding-right: 32.5px;
-        max-width: 769px;
+        background-image: url(/src/images/registration/tablet/donut4\ 2.png), url(/src/images/registration/tablet/confetti.png);
+        background-repeat: no-repeat;
+        background-size: 235px 231px, 388px 374px;
+        background-position: 0px 20px, 482px 138px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/src/images/registration/tablet/donut4\ 2@2x.png), url(/src/images/registration/tablet/confetti@2x.png);
         }
-    
+    }
 
     @include for-desktop-up {
-        padding-left: 232px;
-        padding-right: 232px;
-        max-width: 1286px;
+        background-image: url(/src/images/registration/pc/donut.png), url(/src/images/registration/pc/confetti.png);
+        background-repeat: no-repeat;
+        background-size: 257px 257px, 605px 589px;
+        background-position: -20px 72px, 614px 104px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/src/images/registration/pc/donut@2x.png), url(/src/images/registration/pc/confetti@2x.png);
         }
+    }
 }
+
+
+
+// ------------------------
+
 
 
 .registration__heading {
@@ -53,10 +68,12 @@ margin-right: auto;
 
     @include for-tablet-only {
         line-height: 2.7em;
+        margin-bottom: 8px;
     }
 
     @include for-desktop-up {
         line-height: 1.8em;
+        margin-bottom: 16px;
     }
 }
 
@@ -78,9 +95,9 @@ margin-right: auto;
 
 
     @include for-tablet-only {
-        margin-top: 8px;
-        padding: 40px 60px 66px 62px;   
-        }
+        padding: 40px 60px 66px 62px;
+        min-width: 704px;
+    }
 
     @include for-tablet-up {
         border-radius: 150px;
@@ -91,10 +108,8 @@ margin-right: auto;
     }
 
     @include for-desktop-up {
-        margin: 16px 0px 0px 0px;
         padding: 35px 105px 35px 107px;
-        min-width: 822px;
-        
+        width: 822px;
     }
 }
 
@@ -112,22 +127,23 @@ margin-right: auto;
 
         text-align: center;
     }
-    
+
     @include for-tablet-only {
-        max-width: 90px;
+        width: 90px;
         margin-top: auto;
         margin-bottom: auto;
+        margin-right: 32px;
     }
 
     @include for-tablet-up {
         text-align: right;
     }
 
-   @include for-desktop-up {
-       min-width: 127px;
-       margin-top: 20px;
-       margin-right: 32px;
-       font-size: 20px;
+    @include for-desktop-up {
+        min-width: 127px;
+        margin-top: 20px;
+        margin-right: 32px;
+        font-size: 20px;
     }
 }
 
@@ -154,18 +170,18 @@ margin-right: auto;
         border-top: 1px solid getColor('form-text');
     }
 
-    
+
     @include for-tablet-up {
         display: flex;
         flex-direction: row;
         padding-left: 24px;
+        border-left: 1px solid getColor('form-text');
     }
 
-   @include for-desktop-up { 
-       margin-top: 21px;
-       border-left: 1px solid getColor('form-text');
-       padding-left: 32px;
-   }
+    @include for-desktop-up {
+        margin-top: 21px;
+        padding-left: 32px;
+    }
 
 }
 
@@ -198,6 +214,7 @@ margin-right: auto;
     margin-right: auto;
     width: 100%;
     height: 20px;
+    outline: none;
 
     background-color: transparent;
     border: none;
@@ -215,7 +232,7 @@ margin-right: auto;
     @include for-desktop-up {
         min-width: 238px;
         height: 22px;
-     }
+    }
 
 
     &::placeholder {
@@ -224,7 +241,7 @@ margin-right: auto;
         font-size: 16px;
         line-height: 1.25em;
     }
-    
+
     &:invalid {
         border-color: red;
     }
@@ -239,8 +256,8 @@ margin-right: auto;
 
 @include for-desktop-up {
     .register__input+.register__input {
-            margin-top: 15px;
-        }
+        margin-top: 15px;
+    }
 }
 
 
