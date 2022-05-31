@@ -1,3 +1,29 @@
-<section>
+<section class="registration">
+<div class="registration__container">
+    <h2 class="title registration__heading">Registration</h2>
 
+
+    <div class="register__container">
+        <p class="register__info">
+            May 23, 11:00 <br />
+            New York
+            <span class="register__info-price">
+                $ 699
+            </span>
+        </p>
+
+        <form class="register">
+            <div class="register__group" role="group" aria-labelledby="contact-details-head">
+                <p class="register__head" id="contact-details-head">
+                    Apply your personal info <br /> for registration
+                </p>
+                <input pattern="[A-Za-z ]{5,}" class="register__input" type="text" name="username" placeholder="Your name" />
+                <input pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}+" class="register__input" type="tel" name="username" placeholder="Phone number" />
+                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="register__input" type="email" name="email" placeholder="Email" />
+            </div>
+
+            <button class="register__button btn">Register</button>
+        </form>
+</div>
+    </div>
 </section>
