@@ -18,14 +18,14 @@
                     and you will spend an unforgettable time and
                     will become a real professional
                     in donuts cooking!</li>
-                <li class="feature__item feature__item-secondary" id="more" id="dots" type="display: none;">
+                <li class="feature__item feature__item-secondary" id="read" id="points" type="display: none;">
                     Come with your dear people and friends
                     and you will spend an unforgettable time and
                     will become a real professional
                     in donuts cooking!</li>
-                <span id="dots"></span>
+                <span id="points"></span>
             </ul>
-            <button type="button" class="button__read-more" onclick="myFunction()" id="myBtn">Read
+            <button type="button" class="button__read-more" onclick="myFunction()" id="meBtn">Read
                 more</button>
         </div>
         <article class="event">
@@ -88,18 +88,18 @@
         </article>
     </div>
     <script>    function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+            var points = document.getElementById("points");
+            var readmeText = document.getElementById("read");
+            var btnreadText = document.getElementById("meBtn");
 
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
+            if (points.style.display === "none") {
+                points.style.display = "inline";
+                btnreadText.innerHTML = "Read more";
+                readmeText.style.display = "none";
             } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Less";
-                moreText.style.display = "inline";
+                points.style.display = "none";
+                btnreadText.innerHTML = "Less";
+                readmeText.style.display = "inline";
             }
         }</script>
 

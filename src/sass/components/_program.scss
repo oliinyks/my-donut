@@ -113,7 +113,7 @@
   display: none;
 
   @include for-desktop-up {
-    display: block;
+    display: inline;
   }
 }
 .feature__item-secondary {
