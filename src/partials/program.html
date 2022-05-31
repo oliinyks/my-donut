@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" id="program">
     <div class="dignity">
         <div class="feature">
             <h2 class="feature__title">Program</h2>
@@ -18,14 +18,14 @@
                     and you will spend an unforgettable time and
                     will become a real professional
                     in donuts cooking!</li>
-                <li class="feature__item feature__item-secondary" id="read" id="points" type="display: none;">
+                <li class="feature__item feature__item-secondary" id="more-para">
                     Come with your dear people and friends
                     and you will spend an unforgettable time and
                     will become a real professional
                     in donuts cooking!</li>
-                <span id="points"></span>
+                <span id="para-dots"></span>
             </ul>
-            <button type="button" class="button__read-more" onclick="myProgramFunction()" id="meBtn">Read
+            <button type="button" class="button__read-more" onclick="moreLess(event)" id="btn">Read
                 more</button>
         </div>
         <article class="event">
@@ -87,20 +87,23 @@
             </div>
         </article>
     </div>
-    <script>    function myProgramFunction() {
-            var points = document.getElementById("points");
-            var readmeText = document.getElementById("read");
-            var btnreadText = document.getElementById("meBtn");
+    <script>
+        function moreLess(e) {
+            e.preventDefault()
+            var dots = document.querySelector("#para-dots");
+            var morePara = document.querySelector("#more-para");
+            var btnPara = document.querySelector("#btn");
 
-            if (points.style.display === "none") {
-                points.style.display = "inline";
-                btnreadText.innerHTML = "Read more";
-                readmeText.style.display = "none";
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnPara.innerHTML = "Read More...";
+                morePara.style.display = "none";
             } else {
-                points.style.display = "none";
-                btnreadText.innerHTML = "Less";
-                readmeText.style.display = "inline";
+                dots.style.display = "none";
+                btnPara.innerHTML = "Less";
+                morePara.style.display = "inline";
             }
-        }</script>
+        }
+    </script>
 
 </section>
