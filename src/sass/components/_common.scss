@@ -1,53 +1,49 @@
-ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 h1,
 h2,
 h3,
-p{
-	margin-top: 0;
-	margin-bottom: 0;
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-body{
-font-family: 'Montserrat';
-font-weight: 400;
-font-size: 18px;
-line-height: 1.22em;
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22em;
 }
 
+.title {
+  font-family: 'Caveat Brush';
+  font-size: 24px;
+  line-height: 1.25em;
+  text-align: center;
 
-
-.title{ 
-font-family: 'Caveat Brush';
-font-size: 24px;
-line-height: 1.25em;
-text-align: center;
-
-	@include for-desktop-up{
-	font-size: 36px;
-	line-height: 1.8em;
-	}
-
+  @include for-desktop-up {
+    font-size: 36px;
+    line-height: 1.8em;
+  }
 }
 
 .btn {
+  font-family: 'Caveat Brush';
+  line-height: 1.27em;
+  text-align: center;
+  width: 145px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
 
-	font-family: 'Caveat Brush';
-	line-height: 1.27em;
-	text-align: center;
-	width: 145px;
-	height: 40px;
-	border-radius: 25px;
-	border: none;
-	cursor: pointer;
-
-	color: #FFFFFF;
-	background: #AB816C;
+  color: #ffffff;
+  background: #ab816c;
 }
