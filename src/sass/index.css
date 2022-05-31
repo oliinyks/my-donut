@@ -990,6 +990,77 @@ body {
   }
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+}
+
+.swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-title {
+  text-align: center;
+}
+
+.reviews-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 769px) {
+  .reviews-card__slide--1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .reviews-card__slide--3 {
+    display: none;
+  }
+}
+
+.reviews-card__icon + .reviews-card__icon {
+  margin-left: 4px;
+}
+
+.reviews-card__stars {
+  display: block;
+}
+
+.reviews-card__name {
+  width: 152px;
+  height: 17px;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #2e2520;
+}
+
+.reviews-card__text {
+  width: 704px;
+  height: 120px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2e2520;
+}
+
 .container-contact {
   padding-top: 32px;
   text-align: center;

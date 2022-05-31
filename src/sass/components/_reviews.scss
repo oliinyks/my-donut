@@ -1,27 +1,78 @@
 .swiper {
   width: 100%;
   height: 100%;
+  background-color: tomato;
 }
-
-.swiper-slide {
-  width: 394px;
-  height: 495px;
-  border: 1px solid tomato;
-
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-
+.swiper-wrapper {
   display: flex;
+
   justify-content: center;
-  align-items: center;
 }
 
-.swiper-slide img {
+// .swiper-slide {
+//   width: 394px;
+//   height: 495px;
+
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+
+//   /* Center slide text vertically */
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.swiper-title {
+  text-align: center;
+}
+
+.reviews-card__img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.reviews-card__slide--1 {
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
+}
+.reviews-card__slide--3 {
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
+}
+.reviews-card__icon + .reviews-card__icon {
+  margin-left: 4px;
+}
+.reviews-card__stars {
+  // display: flex;
+  display: block;
+}
+.reviews-card__name {
+  width: 152px;
+  height: 17px;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: #2e2520;
+}
+.reviews-card__text {
+  width: 704px;
+  height: 120px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #2e2520;
 }
