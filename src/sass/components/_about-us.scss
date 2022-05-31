@@ -64,17 +64,14 @@
   font-style: normal;
   font-weight: 400;
   color: getColor('primary-text');
-
   @include for-phone-up {
     font-size: 16px;
     line-height: 1.25;
   }
-
   @include for-tablet-up {
     font-size: 16px;
     line-height: 1.25;
   }
-
   @include for-desktop-up {
     font-size: 18px;
     line-height: 1.22;
@@ -88,20 +85,23 @@
       display: none;
     }
   }
-
   @include for-tablet-up {
     &--read-more {
       display: none;
     }
   }
-
   @include for-desktop-up {
     &--read-more {
-      display: block;
+    display: block;
+    }
+    &:not(:last-child) {
+    padding-bottom: 22px;
+    padding-right: 5px;
     }
   }
 }
 
+<<<<<<< Updated upstream
 .about__p:not(:last-child) {
 <<<<<<< Updated upstream
   padding-bottom: 22px;
@@ -116,17 +116,40 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+.about__p--padding {
+  @include for-phone-only {
+  display: block;
+  padding-bottom: 22px;
+  }
+  @include for-tablet-only {
+  padding-bottom: 22px;
+  }
+}
+
+.about__p--read-more {
+  @include for-phone-only {
+  display: block;
+  padding-top: 22px;
+  }
+  @include for-tablet-only {
+  display: block;
+  padding-top: 22px;
+  }
+>>>>>>> Stashed changes
 }
 
 .style-btn {
   @include for-phone-up {
     width: 67px;
-    height: 23px;
     padding: 0;
     color: #AB816C;
     background: none;
+    text-align: left;
+    padding-top: 16px;
   }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -136,6 +159,8 @@
 >>>>>>> Stashed changes
   @include for-tablet-up {}
 
+=======
+>>>>>>> Stashed changes
   @include for-desktop-up {
     display: none;
   }
@@ -155,7 +180,7 @@
 }
 
 .cupcake {
-  @media (max-width: 769px) {
+  @include for-phone-only {
     padding-bottom: 16px;
   }
 <<<<<<< Updated upstream
@@ -171,9 +196,8 @@
 =======
 >>>>>>> Stashed changes
 
-  @media (min-width: 770px) and (max-width: 1299px) {
+  @include for-tablet-only {
     padding-right: 31px;
-
   }
 
   @include for-desktop-up {
@@ -186,15 +210,21 @@
 }
 
 .spoon {
-  @media (max-width: 1299px) {
+  @include for-phone-only {
     display: none;
   }
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   @include for-desktop-up {
     position:absolute;
 =======
 
+=======
+  @include for-tablet-only {
+    display: none;
+  } 
+>>>>>>> Stashed changes
   @include for-desktop-up {
     position: absolute;
 >>>>>>> Stashed changes
