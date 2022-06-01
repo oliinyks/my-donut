@@ -1,29 +1,26 @@
 $colors: (
-// приклад: 'primary-text':rgba(117, 117, 117, 1),
-'primary-background': #E5E5E5, 
-'secondary-background': #FEF3E4, 
-'menu-background':  rgba(254,243,228,0.9), 
+  // приклад: 'primary-text':rgba(117, 117, 117, 1),
+  'primary-background': #e5e5e5,
+  'secondary-background': #fef3e4,
+  'menu-background': rgba(254, 243, 228, 0.9),
+  'registration-form-background': #fffff9,
+  'registration-form-shadow': rgba(171, 129, 108, 0.15),
+  'donut-element-shadow': rgba(171, 129, 108, 0.25),
+  'donut-icon': #674d40,
 
-'registration-form-background':   #FFFFF9,
-'registration-form-shadow': rgba(171, 129, 108, 0.15),
-
-'donut-element-shadow': rgba(171,129,108,0.25),
-'donut-icon':#674D40,
-  
-'accent': #AB816C,  
-'form-border': rgba(171,129,108,0.5),
-
-'text-primary':#2E2520, 
-'button-text': #FFFFFF,  
-'menu-text-secondary': #876655,
-'donut-text': #000000, 
-'form-text':rgba(171, 129, 108, 0.5), 
+  'accent': #ab816c,
+  'form-border': rgba(171, 129, 108, 0.5),
+  'text-primary': #2e2520,
+  'button-text': #ffffff,
+  'menu-text-secondary': #876655,
+  'donut-text': #000000,
+  'form-text': rgba(171, 129, 108, 0.5)
 );
 
 //приклад вставтляння кольору:: color: getColor('primary-text');
 
 @function getColor($key) {
-	@return map-get($colors, $key);
+  @return map-get($colors, $key);
 }
 
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);

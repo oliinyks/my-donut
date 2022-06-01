@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" id="program">
     <div class="dignity">
         <div class="feature">
             <h2 class="feature__title">Program</h2>
@@ -12,80 +12,98 @@
                 <li class="feature__item">&#62; Photoshoot by professional photographer</li>
                 <li class="feature__item">&#62; Secret receipt of cooking from Eva</li>
                 <li class="feature__item">&#62; All products are included in the price</li>
-                <li class="feature__item feature__item-conclusions">
+                <li class="feature__item">&#62; All products are included in the price</li>
+                <li class="feature__item feature__item-primary">
                     Come with your dear people and friends
                     and you will spend an unforgettable time and
                     will become a real professional
                     in donuts cooking!</li>
-                <li class="feature__item" id="more" id="dots">
+                <li class="feature__item feature__item-secondary" id="more-para">
                     Come with your dear people and friends
                     and you will spend an unforgettable time and
                     will become a real professional
                     in donuts cooking!</li>
-                <span id="dots"></span>
+                <span id="para-dots"></span>
             </ul>
-            <button type="button" class="button__read-more" onclick="myFunction()" id="myBtn">Read
+            <button type="button" class="button__read-more" onclick="moreLess(event)" id="btn">Read
                 more</button>
         </div>
         <article class="event">
             <div class=" event-plan-left">
                 <ul class="event-plan__list-left">
-                    <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-primary"></svg></use>
-                        <p class="event-plan__title">Type of the event</p>
-                        <p class="event-plan__text">Cooking classes</p>
-                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
+                    <li class="event-plan__item event-plan__item-douwn">
+                        <a href="#" class="event-plan__link">
+                            <img src="../src/images/program/mobile/pic-3.png"
+                                srcset="../src/images/program/mobile/pic-3.png 1x, ../src/images/program/mobile/pic-3@2x-3.png 2x"
+                                alt="Пончик" class="event-plan__icon-primary">
+                            <p class="event-plan__title">Type of the event</p>
+                            <p class="event-plan__text">Cooking classes</p>
+                            <svg class="event-plan__icon-secondary">
+                                <use href="../src/images/sprite.svg#hat"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-primary"></svg></use>
-                        <p class="event-plan__title">Time of the event</p>
-                        <p class="event-plan__text">18:30 (2.5 hours)</p>
-                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
+                    <li class=" event-plan__item">
+                        <a href="#" class="event-plan__link">
+                            <img src="../src/images/program/pc/pic-2.png"
+                                srcset="../src/images/program/pc/pic-2.png 1x, ../src/images/program/pc/pic@2x-2.png 2x"
+                                alt="Пончик" class="event-plan__icon-primary">
+                            <p class="event-plan__title">Time of the event</p>
+                            <p class="event-plan__text">18:30 (2.5 hours)</p>
+                            <svg class="event-plan__icon-secondary">
+                                <use href="../src/images/sprite.svg#clock"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class=" event-plan-right">
                 <ul class="event-plan__list-right">
-                    <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-primary"></svg></use>
-                        <p class="event-plan__title">Number of guests</p>
-                        <p class="event-plan__text">1 to 20</p>
-                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
+                    <li class="event-plan__item event-plan__item-douwn">
+                        <a href="#" class="event-plan__link">
+                            <img src="../src/images/program/pc/pic-3.png"
+                                srcset="../src/images/program/pc/pic-3.png 1x, ../src/images/program/pc/pic@2x-3.png 2x"
+                                alt="Пончик" class="event-plan__icon-primary">
+                            <p class="event-plan__title">Number of guests</p>
+                            <p class="event-plan__text">1 to 20</p>
+                            <svg class="event-plan__icon-secondary">
+                                <use href="../src/images/sprite.svg#people"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="event-plan__item">
-                        <use><svg class="event-plan__icon-primary"></svg></use>
-                        <p class="event-plan__title">The host speaks</p>
-                        <p class="event-plan__text">English, French</p>
-                        <use class="event-plan__icon"><svg class="event-plan__icon-secondary"></svg></use>
+                        <a href="#" class="event-plan__link">
+                            <img src="../src/images/program/pc/pic-1.png"
+                                srcset="../src/images/program/pc/pic-1.png 1x, ../src/images/program/pc/pic@2x-1.png 2x"
+                                alt="Пончик" class="event-plan__icon-primary">
+                            <p class="event-plan__title">The host speaks</p>
+                            <p class="event-plan__text">English, French</p>
+                            <svg class="event-plan__icon-secondary">
+                                <use href="../src/images/sprite.svg#chat"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
         </article>
     </div>
-    <!-- <script>// <![CDATA[
-        function ShowHide(divId) {
-            if (document.getElementById(divId).style.display == 'none') {
-                document.getElementById(divId).style.display = 'block';
-            }
-            else {
-                document.getElementById(divId).style.display = 'none';
-            }
-        }
-    // ]]></script> -->
-    <script>    function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+    <script>
+        function moreLess(e) {
+            e.preventDefault()
+            var dots = document.querySelector("#para-dots");
+            var morePara = document.querySelector("#more-para");
+            var btnPara = document.querySelector("#btn");
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
+                btnPara.innerHTML = "Read More...";
+                morePara.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Less";
-                moreText.style.display = "inline";
+                btnPara.innerHTML = "Less";
+                morePara.style.display = "inline";
             }
-        }</script>
+        }
+    </script>
 
 </section>

@@ -8,26 +8,31 @@
 }
 .feature {
   @include for-phone-up {
-    width: 280px;
+    width: 290px;
   }
   @include for-tablet-up {
-    width: 336px;
+    width: 365px;
   }
   @include for-desktop-up {
-    width: 392px;
+    width: 400px;
   }
 }
 // Заголовок
 .feature__title {
   font-family: var(--secodary-font-family);
   font-style: normal;
-  font-size: 36px;
-  line-height: 65px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 400;
   color: getColor('text-primary');
   text-align: center;
   margin-bottom: 8px;
   @include for-tablet-up {
     text-align: left;
+  }
+  @include for-desktop-up {
+    font-size: 2.25rem;
+    line-height: 4.0625rem;
   }
 }
 .feature__list {
@@ -36,79 +41,130 @@
     margin-bottom: 0;
   }
 }
-//
 .feature__text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
   margin-bottom: 8px;
+
   @include for-desktop-up {
     margin-bottom: 20px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 // Описание
 .feature__item {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
   color: getColor('text-primary');
   margin-bottom: 8px;
   @include for-desktop-up {
     margin-bottom: 16px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
   &:last-child {
     margin-bottom: 0;
   }
 }
-
-// Кнопка Read more
+// Кнопка Read more и текст
 .button__read-more {
   font-family: var(--secodary-font-family);
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  padding: 0 10px 20px 5px;
+  font-weight: 400;
   color: getColor('accent');
   border: none;
   background: none;
+  &:focus,
+  &:hover {
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
   @include for-desktop-up {
     display: none;
   }
 }
-.feature__item-conclusions {
-  display: none;
-  @include for-desktop-up {
-    display: block;
+// Анимация кнокпи прыжок
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
+.feature__item-primary {
+  display: none;
 
+  @include for-desktop-up {
+    display: inline;
+  }
+}
+.feature__item-secondary {
+  @include for-desktop-up {
+    display: none;
+  }
+}
 // Пончики
 .event {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 358px;
+  width: 320px;
   @include for-phone-only {
-    height: 330px;
-    margin-top: 55px;
-    margin-bottom: 34px;
+    margin-top: 35px;
   }
-  @include for-tablet-up {
-    width: 50%;
-  }
-}
-
-.event-plan__list-left {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  justify-content: flex-start;
-  @include for-tablet-up {
+  @include for-tablet-only {
     justify-content: flex-end;
+    margin-top: 45px;
+    width: 350px;
+    height: 430px;
+  }
+  @include for-desktop-up {
+    width: 550px;
+    margin-top: 45px;
+    height: 550px;
   }
 }
-.event-plan__list-right {
+.event-plan-right {
   display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  align-content: space-around;
-  justify-content: flex-end;
+  align-items: flex-end;
 }
-.event-plan__item {
+.event-plan-left {
+  @include for-tablet-up {
+    margin-right: 15px;
+  }
+  @include for-desktop-up {
+    margin-right: 15px;
+  }
+}
+.event-plan__item-douwn {
+  margin-bottom: 59px;
+  @include for-tablet-up {
+    margin-bottom: 50px;
+  }
+  @include for-desktop-up {
+    margin-bottom: 80px;
+  }
+}
+// Ссылка по ячейке с пончиками
+.event-plan__link {
   display: flex;
   align-content: flex-end;
   flex-wrap: wrap;
@@ -118,8 +174,17 @@
   height: 130px;
   text-align: center;
   border-radius: 50%;
+  color: getColor('donut-icon');
   background: #fef3e4;
-  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  box-shadow: 2px 4px 5px getColor('donut-element-shadow'),
+    -2px 4px 5px getColor('donut-element-shadow');
+  transition: all 0.2s ease;
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+    box-shadow: 2px 9px 50px getColor('donut-element-shadow'),
+      -2px 6px 20px getColor('donut-element-shadow');
+  }
   @include for-tablet-up {
     width: 152px;
     height: 152px;
@@ -132,22 +197,22 @@
 // 'Заголок' характеристики мероприятия
 .event-plan__title {
   font-family: var(--secodary-font-family);
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
   color: getColor('donut-text');
   margin-bottom: 4px;
   @include for-tablet-up {
     margin-bottom: 14px;
   }
   @include for-desktop-up {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     margin-bottom: 16px;
   }
 }
 .event-plan__text {
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
   color: getColor('donut-text');
   width: 100%;
   margin-bottom: 9px;
@@ -155,24 +220,41 @@
     margin-bottom: 10px;
   }
   @include for-desktop-up {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-bottom: 8px;
   }
 }
 // Иконки пончиков
 .event-plan__icon-primary {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -34px;
+  left: 27px;
   height: 80px;
-  width: 80px;
+  width: 75px;
+  @include for-tablet-up {
+    height: 80px;
+    width: 75px;
+    top: -30px;
+    left: 40px;
+  }
+  @include for-desktop-up {
+    top: -40px;
+    left: 40px;
+    height: 100px;
+    width: 95px;
+  }
 }
 // // Иконки под описанием
-.event-plan__icon {
-  margin-bottom: 16px;
-}
 .event-plan__icon-secondary {
+  fill: currentColor;
   height: 20px;
   width: 21px;
+  margin-bottom: 10px;
+  @include for-tablet-up {
+    margin-bottom: 14px;
+  }
+  @include for-desktop-up {
+    margin-bottom: 16px;
+  }
 }

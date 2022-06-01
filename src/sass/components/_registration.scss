@@ -1,0 +1,290 @@
+.registration {
+
+    @include for-phone-only {
+        position: relative;
+        padding-top: 32px;
+    }
+
+    @include for-tablet-only {
+        padding-top: 40px;
+        padding-bottom: 46px;
+    }
+
+    @include for-desktop-up {
+        padding-top: 60px;
+        padding-bottom: 128px;
+    }
+}
+
+
+
+
+// ------------------------background image
+
+
+.registration {
+    @include for-tablet-only {
+        background-image: url(/src/images/registration/tablet/donut4\ 2.png), url(/src/images/registration/tablet/confetti.png);
+        background-repeat: no-repeat;
+        background-size: 235px 231px, 388px 374px;
+        background-position: 0px 20px, 482px 138px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/src/images/registration/tablet/donut4\ 2@2x.png), url(/src/images/registration/tablet/confetti@2x.png);
+        }
+    }
+
+    @include for-desktop-up {
+        background-image: url(/src/images/registration/pc/donut.png), url(/src/images/registration/pc/confetti.png);
+        background-repeat: no-repeat;
+        background-size: 257px 257px, 605px 589px;
+        background-position: -20px 72px, 614px 104px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/src/images/registration/pc/donut@2x.png), url(/src/images/registration/pc/confetti@2x.png);
+        }
+    }
+}
+
+
+
+// ------------------------
+
+
+
+.registration__heading {
+    color: getColor('text-primary');
+
+    @include for-phone-only {
+        position: absolute;
+        top: 64px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include for-tablet-only {
+        line-height: 2.7em;
+        margin-bottom: 8px;
+    }
+
+    @include for-desktop-up {
+        line-height: 1.8em;
+        margin-bottom: 16px;
+    }
+}
+
+
+.register__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    background-color: getColor('registration-form-background');
+    box-shadow: -4px -4px 4px getColor('registration-form-shadow'),
+        4px 4px 4px getColor('registration-form-shadow');
+
+    @include for-phone-only {
+        padding: 82px 8px 32px 8px;
+        border-radius: 150px 150px 0px 0px;
+        min-height: 466px;
+    }
+
+
+    @include for-tablet-only {
+        padding: 40px 60px 66px 62px;
+        min-width: 704px;
+    }
+
+    @include for-tablet-up {
+        border-radius: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: 260px;
+    }
+
+    @include for-desktop-up {
+        padding: 35px 105px 35px 107px;
+        width: 822px;
+    }
+}
+
+
+
+.register__info {
+    font-weight: 500;
+    color: getColor('text-primary');
+
+    @include for-phone-only {
+        margin-top: 20px;
+        max-width: 114px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    @include for-tablet-only {
+        width: 90px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 32px;
+    }
+
+    @include for-tablet-up {
+        text-align: right;
+    }
+
+    @include for-desktop-up {
+        min-width: 127px;
+        margin-top: 20px;
+        margin-right: 32px;
+        font-size: 20px;
+    }
+}
+
+
+
+.register__info-price {
+    display: block;
+
+    @include for-phone-only {
+        margin-top: 20px;
+    }
+
+    @include for-tablet-up {
+        margin-top: 32px;
+    }
+}
+
+
+.register {
+
+    @include for-phone-only {
+        margin-top: 20px;
+        padding-top: 8px;
+        border-top: 1px solid getColor('form-text');
+    }
+
+
+    @include for-tablet-up {
+        display: flex;
+        flex-direction: row;
+        padding-left: 24px;
+        border-left: 1px solid getColor('form-text');
+    }
+
+    @include for-desktop-up {
+        margin-top: 21px;
+        padding-left: 32px;
+    }
+
+}
+
+.register__head {
+    font-size: 16px;
+    line-height: 1.25em;
+    color: getColor('text-primary');
+
+    @include for-phone-only {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    @include for-tablet-up {
+        text-align: left;
+    }
+
+    @include for-desktop-up {
+        margin-bottom: 13px;
+        font-size: 18px;
+        line-height: 1.22em;
+    }
+}
+
+
+
+.register__input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 20px;
+    outline: none;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid getColor('accent');
+
+    @include for-phone-only {
+        max-width: 400px;
+    }
+
+    @include for-tablet-only {
+        min-width: 237px;
+        margin-top: 16px;
+    }
+
+    @include for-desktop-up {
+        min-width: 238px;
+        height: 22px;
+    }
+
+
+    &::placeholder {
+        color: getColor('form-text');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25em;
+    }
+
+    &:invalid {
+        border-color: red;
+    }
+}
+
+
+@include for-phone-only {
+    .register__input+.register__input {
+        margin-top: 20px;
+    }
+}
+
+@include for-desktop-up {
+    .register__input+.register__input {
+        margin-top: 15px;
+    }
+}
+
+
+
+.register__button {
+    display: block;
+
+
+    @include for-phone-only {
+        max-width: 400px;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    @include for-tablet-only {
+        margin-top: 70px;
+        margin-left: 54px;
+        padding: 8px 47px 9px 46px;
+    }
+
+    @include for-desktop-up {
+        margin-top: 56px;
+        margin-left: 23px;
+        padding: 7px 45px 8px 44px;
+        font-size: 24px;
+        line-height: 1.25px;
+    }
+}

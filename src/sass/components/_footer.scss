@@ -1,19 +1,126 @@
 .container-footer {
-    padding-top: 32px;
     text-align: center;
+    padding-top: 32px;
+    position: relative;
 }
 
 .address {
+    margin-bottom: 20px;
+}
+
+.address-block {
     display: flex;
-    justify-content: space-between;
-    
+    margin-left: 0;
+    @include for-phone-only {
+        justify-content: space-between;
+    }
+
+    &__phone, &__city {
+        text-decoration: none;
+        font-style: normal; 
+        font-size: 16px;
+        line-height: 1.22em;       
+        color: getColor('text-primary');
+        position: relative;
+        z-index: 2;
+    }
 
     &__phone {
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 1.25em;       
+        @include for-desktop-up {
+            margin-left: 17px;
+        }
+    }
+    &__city {
+        @include for-desktop-up {
+            margin-left: 620px;
+        }
 
+        @include for-tablet-only {
+            margin-left: 426px;
+        }
+    }
 
-        color: #2E2520;
+    &__phone-svg {
+        height: 12.68px;
+        width: 13px;
+        margin-right: 4px;
+    }
+
+    &__city-svg {
+        height: 14.07px;
+        width: 11px;
+        margin-right: 4px;
+    }
+}
+
+.social-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.89em;
+    margin-bottom: 32px;
+
+    @include for-tablet-up {
+        margin-bottom: 60px;
+    }
+
+    @include for-desktop-up {
+        margin-bottom: 80px;
+    }
+}
+
+.social-icon {
+
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &__svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.wheat-flour-picture {
+    position: absolute;
+    background-image: url(/src/images/footer/mobile/Wheat-flour.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    width: 113px;
+    height: 99px;
+    bottom: -20px;
+    right: 0px;
+    background-position: 29px 26px;
+    z-index: 0;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/src/images/footer/mobile/Wheat-flour@2x.png);
+    }
+
+    @include for-tablet-up {
+        background-image: url(/src/images/footer/tablet/Wheat-flour.png);
+        width: 207px;
+        height: 182px;
+        background-position: 23px 63px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(/src/images/footer/tablet/Wheat-flour@2x.png);
+        }
+
+    }
+
+    @include for-desktop-up {
+        background-image: url(/src/images/footer/pc/Wheat-flour.png);
+        width: 355px;
+        height: 312px;
+        background-position: 52px 137px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(/src/images/footer/tablet/Wheat-flour@2x.png);
+        }
     }
 }
