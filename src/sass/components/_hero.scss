@@ -67,6 +67,7 @@
   &__btn {
     display: inline-block;
     margin-bottom: 32px;
+    padding-top: 7px;
     min-width: 145px;
 
     font-weight: 400;
@@ -89,7 +90,6 @@
       padding-bottom: 9px;
       font-size: 18px;
       line-height: 1.28;
-      text-align: center;
     }
   }
 }
