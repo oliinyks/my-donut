@@ -99,24 +99,46 @@
     &--read-more {
       display: block;
     }
+
+    &:not(:last-child) {
+      padding-bottom: 22px;
+      padding-right: 5px;
+    }
   }
 }
 
-.about__p:not(:last-child) {
-  padding-bottom: 22px;
-  padding-right: 5px;
+.about__p--padding {
+  @include for-phone-only {
+    display: block;
+    padding-bottom: 22px;
+  }
+
+  @include for-tablet-only {
+    padding-bottom: 22px;
+  }
+}
+
+.about__p--read-more {
+  @include for-phone-only {
+    
+    padding-top: 22px;
+  }
+
+  @include for-tablet-only {
+    
+    padding-top: 22px;
+  }
 }
 
 .style-btn {
   @include for-phone-up {
     width: 67px;
-    height: 23px;
     padding: 0;
     color: #AB816C;
     background: none;
+    text-align: left;
+    padding-top: 16px;
   }
-
-  @include for-tablet-up {}
 
   @include for-desktop-up {
     display: none;
@@ -129,13 +151,12 @@
 }
 
 .cupcake {
-  @media (max-width: 769px) {
+  @include for-phone-only {
     padding-bottom: 16px;
   }
 
-  @media (min-width: 770px) and (max-width: 1299px) {
+  @include for-tablet-only {
     padding-right: 31px;
-
   }
 
   @include for-desktop-up {
@@ -144,7 +165,11 @@
 }
 
 .spoon {
-  @media (max-width: 1299px) {
+  @include for-phone-only {
+    display: none;
+  }
+
+  @include for-tablet-only {
     display: none;
   }
 
