@@ -36,6 +36,7 @@
         @include for-tablet-only {
             width: 336px;
         }
+        
         @include for-desktop-up {
             width: 394px;
         }

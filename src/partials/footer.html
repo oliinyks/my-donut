@@ -1,9 +1,10 @@
-<footer class="container container-footer">
+<footer class="container-footer">
+    <div class="container">
     <ul class="social-section">
         <li class="social-icon">
             <a href="#" class="social-icon__link">
                 <svg class="social-icon__svg">
-                    <use></use>
+                    <use href="/src/images/sprite.svg#twitter"></use>
                 </svg>
             </a>
 
@@ -11,7 +12,7 @@
         <li class="social-icon">
             <a href="#" class="social-icon__link">
                 <svg class="social-icon__svg">
-                    <use></use>
+                    <use href="/src/images/sprite.svg#instagram"></use>
                 </svg>
             </a>
         
@@ -19,7 +20,7 @@
         <li class="social-icon">
             <a href="#" class="social-icon__link">
                 <svg class="social-icon__svg">
-                    <use></use>
+                    <use href="/src/images/sprite.svg#facebook"></use>
                 </svg>
             </a>
 
@@ -29,13 +30,26 @@
     <address class="address">
         <ul class="address-block">
             <li>
-                <a href="tel:9102228855" target="_blank" class="address-block__phone">(910)222-8855</a>
+                <a href="tel:9102228855" target="_blank" class="address-block__phone"> 
+                    <svg class="address-block__phone-svg">
+                        <use href="/src/images/sprite.svg#phone"></use>
+                    </svg>(910)222-8855
+                </a>
             </li>
             <li>
                 <a href="https://goo.gl/maps/rQNzHWPdNWBkHwjWA" target="_blank" rel="noopener noreferrer"
-                    class="address-block__city">New York</a>
+                    class="address-block__city">
+                    <svg class="address-block__city-svg">
+                        <use href="/src/images/sprite.svg#location"></use>
+                    </svg>New York
+                </a>
             </li>
         </ul>
+        <!-- <picture class="wheat-flour-picture">
+            <source srcset="/src/images/footer/mobile/Wheat-flour.png 1x, /src/images/footer/mobile/Wheat-flour@2x.png 2x">
+            <img src="/src/images/footer/tablet/Wheat-flour.png" alt="Wheat-flour" max-width="113px" height="auto">
+        </picture> -->
     </address>
-	
+    </div>
+    <div class="wheat-flour-picture"></div>
 </footer>
