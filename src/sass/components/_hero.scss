@@ -106,4 +106,15 @@
   &:not(:first-child) {
     margin-left: 16px;
   }
+
+  &__icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+      fill: getColor('accent');
+    }
+  }
 }
