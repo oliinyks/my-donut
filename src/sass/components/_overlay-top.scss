@@ -1,0 +1,38 @@
+.overlay-top {
+  width: 1280px;
+  margin: 0 auto;
+  background-image: url(/src/images/background/pc/bg-top.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    background-image: url(/src/images/background/mobile/bg-top.svg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+    background-image: url(/src/images/background/tablet/bg-top.svg);
+  }
+
+  &--donuts {
+    background-image: url(/src/images/hero/pc/hero-donuts.png);
+    background-repeat: no-repeat;
+    background-size: 762px 651px;
+    background-position: top 0 right 0;
+
+    @media screen and (max-width: 768px) {
+      background-image: url(/src/images/hero/mobile/pic-donuts.png);
+      background-repeat: no-repeat;
+      background-size: 130px 165px;
+      background-position: top -51px left -12px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      background-image: url(/src/images/hero/tablet/pic-donuts.png);
+      background-repeat: no-repeat;
+      background-size: 363px 388px;
+      background-position: top 0 right 117px;
+    }
+  }
+}

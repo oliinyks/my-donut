@@ -20,7 +20,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22em;
-
   color: getColor('text-primary');
   background-color: getColor('registration-form-background');
 }
@@ -30,9 +29,9 @@ body {
   font-size: 24px;
   line-height: 1.26em;
   text-align: center;
-
   @include for-desktop-up {
     font-size: 36px;
+    line-height: 1.8em;
   }
 }
 
@@ -47,7 +46,6 @@ body {
   cursor: pointer;
   color: getColor('button-text');
   background: getColor('accent');
-
   &:hover, &:focus{
 	  box-shadow: -4px -4px 4px getColor('registration-form-shadow'), 4px 4px 4px getColor('registration-form-shadow');
 	}

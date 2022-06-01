@@ -1,12 +1,14 @@
 .page-header {
     position: relative;
+    
 
     &__nav {
+        width: 1280px;
         margin: 0 auto;
         display: flex;
     
         @media screen and (max-width: 767px) {
-            width: 480px;
+            width: 320px;
     
             justify-content: space-between;
             align-items: center;
@@ -29,6 +31,21 @@
 
         @media screen and (min-width: 768px) and (max-width: 1279px) {
             padding-top: 36px;
+        }
+
+        &-icon {
+            width: 158px;
+            height: 82px;
+
+            @media screen and (max-width: 767px) {
+                width: 96px;
+                height: 44px;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                width: 96px;
+                height: 48px;
+            }
         }
     }
 }
@@ -85,7 +102,7 @@
 
 .menu-button {
     background-color: transparent;
-    border: 1px solid getColor('text-primary');
+    border: none;
 
     @media screen and (max-width: 767px) {
         margin-right: 20px;
