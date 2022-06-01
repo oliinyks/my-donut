@@ -18,16 +18,19 @@
   @include for-phone-up {
     width: 279px;
     padding-bottom: 16px;
+    padding-top: 16px;
   }
 
   @include for-tablet-up {
     width: 336px;
     padding-bottom: 51px;
+    padding-top: 0;
   }
 
   @include for-desktop-up {
     width: 392px;
     padding-bottom: 66px;
+    padding-top: 0;
   }
 }
 
@@ -120,12 +123,10 @@
 
 .about__p--read-more {
   @include for-phone-only {
-    
     padding-top: 22px;
   }
 
   @include for-tablet-only {
-    
     padding-top: 22px;
   }
 }
@@ -176,6 +177,6 @@
   @include for-desktop-up {
     position: absolute;
     left: -103px;
-    top: 220px;
+    top: 510px;
   }
 }
