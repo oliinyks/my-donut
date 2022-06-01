@@ -7,11 +7,11 @@
 
         <div class="contact-form-block">
             <label for="email" class="contact-form-block__label">Email</label>
-            <input type="email" name="email" class="contact-form-block__input" placeholder="Email">
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="contact-form-block__input" placeholder="Email">
         </div>
         <div class="contact-form-block">
             <label for="question" class="contact-form-block__label">Type your question</label>
-            <input type="text" name="question" class="contact-form-block__input" placeholder="Type your question">
+            <input type="text" pattern="[A-Za-zА-Яа-яЁё]{10,}" name="question" class="contact-form-block__input" placeholder="Type your question">
         </div>
 
         <button type="submit" class="btn contact-btn">Send</button>

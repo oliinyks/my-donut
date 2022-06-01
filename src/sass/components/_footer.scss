@@ -2,10 +2,11 @@
     text-align: center;
     padding-top: 32px;
     position: relative;
+    
 }
 
 .address {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .address-block {
@@ -89,7 +90,7 @@
     background-size: cover;
     width: 113px;
     height: 99px;
-    bottom: -20px;
+    bottom:0;
     right: 0px;
     background-position: 29px 26px;
     z-index: 0;
