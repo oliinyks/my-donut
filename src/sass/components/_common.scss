@@ -48,4 +48,8 @@ body {
   cursor: pointer;
   color: getColor('button-text');
   background: getColor('accent');
+
+  &:hover, &:focus{
+	  box-shadow: -4px -4px 4px getColor('registration-form-shadow'), 4px 4px 4px getColor('registration-form-shadow');
+	}
 }

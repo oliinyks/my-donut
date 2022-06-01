@@ -1,0 +1,15 @@
+		.bg-bottom{
+		background-image: url('../images/background/mobile/bg-bot.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+
+	@include for-tablet-only {
+      background-image: url('../images/background/tablet/bg-bot.svg');
+   }
+
+   @include for-desktop-up {
+      background-image: url('../images/background/pc/bg-bot.svg');
+	}
+		}
