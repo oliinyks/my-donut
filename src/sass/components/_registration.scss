@@ -3,16 +3,17 @@
     @include for-phone-only {
         position: relative;
         padding-top: 32px;
+        padding-bottom: 78px;
     }
 
     @include for-tablet-only {
         padding-top: 40px;
-        padding-bottom: 46px;
+        padding-bottom: 78px;
     }
 
     @include for-desktop-up {
         padding-top: 60px;
-        padding-bottom: 128px;
+        padding-bottom: 160px;
     }
 }
 
