@@ -1,8 +1,10 @@
 .dignity {
+  margin-bottom: 20px;
   @include for-tablet-up {
     display: flex;
     justify-content: space-around;
     @include for-desktop-up {
+      margin-bottom: 40px;
     }
   }
 }
@@ -11,26 +13,28 @@
     width: 290px;
   }
   @include for-tablet-up {
-    width: 365px;
+    width: 335px;
   }
   @include for-desktop-up {
     width: 400px;
   }
 }
 // Заголовок
-.feature__title {
+.feature__titles {
   font-family: var(--secodary-font-family);
   font-style: normal;
   font-size: 1.5rem;
   line-height: 1.875rem;
   font-weight: 400;
   color: getColor('text-primary');
-  text-align: center;
   margin-bottom: 8px;
+  text-align: center;
+
   @include for-tablet-up {
     text-align: left;
   }
   @include for-desktop-up {
+    text-align: left;
     font-size: 2.25rem;
     line-height: 4.0625rem;
   }
@@ -42,6 +46,7 @@
   }
 }
 .feature__text {
+  font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -124,8 +129,8 @@
 // Пончики
 .event {
   display: flex;
-  justify-content: space-around;
-  height: 358px;
+  justify-content: flex-start;
+  height: 350px;
   width: 320px;
   @include for-phone-only {
     margin-top: 35px;
@@ -134,9 +139,10 @@
     justify-content: flex-end;
     margin-top: 45px;
     width: 350px;
-    height: 430px;
+    height: 400px;
   }
   @include for-desktop-up {
+    justify-content: space-around;
     width: 550px;
     margin-top: 45px;
     height: 550px;
@@ -147,8 +153,9 @@
   align-items: flex-end;
 }
 .event-plan-left {
+  margin-right: 20px;
   @include for-tablet-up {
-    margin-right: 15px;
+    margin-right: 25px;
   }
   @include for-desktop-up {
     margin-right: 15px;
