@@ -131,7 +131,6 @@
   display: flex;
   justify-content: flex-start;
   height: 350px;
-  width: 320px;
   @include for-phone-only {
     margin-top: 35px;
   }
