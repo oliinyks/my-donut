@@ -46,13 +46,18 @@ body {
   cursor: pointer;
   color: getColor('button-text');
   background: getColor('accent');
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 
   @include for-desktop-up {
     font-size: 24px;
     line-height: 1.26em;
   }
 
-  &:hover, &:focus{
-	  box-shadow: -4px -4px 4px getColor('registration-form-shadow'), 4px 4px 4px getColor('registration-form-shadow');
-	}
+  &:hover,
+  &:focus {
+    box-shadow: -4px -4px 4px getColor('registration-form-shadow'),
+      4px 4px 4px getColor('registration-form-shadow');
+  }
 }
