@@ -46,6 +46,12 @@ body {
   cursor: pointer;
   color: getColor('button-text');
   background: getColor('accent');
+
+  @include for-desktop-up {
+    font-size: 24px;
+    line-height: 1.26em;
+  }
+
   &:hover, &:focus{
 	  box-shadow: -4px -4px 4px getColor('registration-form-shadow'), 4px 4px 4px getColor('registration-form-shadow');
 	}

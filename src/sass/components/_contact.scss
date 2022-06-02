@@ -1,5 +1,18 @@
 .container-contact {
     text-align: center;
+    @include for-desktop-up {
+        background-image: url(/src/images/registration/pc/confetti.png);
+        background-size: 605px 589px;
+        background-repeat: no-repeat;
+        background-position: 614px -457px;
+        overflow: hidden;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(/src/images/registration/pc/confetti@2x.png);
+        }
+
+    }
 }
 
 .contact-title {
@@ -7,12 +20,16 @@
     @include for-tablet-up {
         margin-bottom: 20px;
     }
+    @include for-desktop-up {
+        line-height: 1.26em;
+    }
 }
 
 .conact-secondary-title {
 
     margin-bottom: 16px;
     font-size: 16px;
+    line-height: 1.22em;
 
     @include for-desktop-up {
         font-size: 18px;
@@ -30,8 +47,10 @@
         width: 280px;
         height: 20px;
         border-bottom: 1px solid getColor('accent');
+        font-size: 16px;
+        line-height: 1.22em;
         outline: none;
-
+        background: none;
         @include for-tablet-only {
             width: 336px;
         }
@@ -39,11 +58,15 @@
         @include for-desktop-up {
             width: 394px;
         }
+        
+        &:invalid {
+            border-color: red;
+        }
     }   
 
     &__input::placeholder {
         font-size: 16px;
-        line-height: 1.25em;
+        line-height: 1.22em;
         color: getColor('form-text');
     }
 }
