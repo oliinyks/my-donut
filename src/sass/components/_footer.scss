@@ -24,6 +24,13 @@
         color: getColor('text-primary');
         position: relative;
         z-index: 2;
+        transition-duration: 250ms;
+        transition-timing-function: $timing-function;
+
+        &:hover, &:focus {
+            color: getColor('accent');
+            fill: getColor('accent');
+        }
     }
 
     &__phone {
@@ -79,6 +86,13 @@
     &__svg {
         width: 16px;
         height: 16px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: $timing-function;
+
+        &:hover, &:focus {
+            fill: getColor('accent');
+        }
     }
 }
 
