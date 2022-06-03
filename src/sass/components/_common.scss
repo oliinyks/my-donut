@@ -48,7 +48,7 @@ body {
   background: getColor('accent');
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  transition: box-shadow 250ms $timing-function;
 
   @include for-desktop-up {
     font-size: 24px;
